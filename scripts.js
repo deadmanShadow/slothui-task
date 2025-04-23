@@ -49,9 +49,8 @@ document.querySelector(".load-more-btn").addEventListener("click", function () {
   );
 
   hiddenCards.forEach((card) => {
-    card.style.display = "block"; // Show all hidden testimonials
+    card.style.display = "block";
   });
 
-  // Hide the "Load More +" button after clicking
   this.style.display = "none";
 });
