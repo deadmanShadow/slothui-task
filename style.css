@@ -71,10 +71,6 @@ body {
   font-weight: 700;
 }
 
-.highlight {
-  color: #5d3eff;
-}
-
 .hero-description {
   font-size: 1rem;
   max-width: 600px;
@@ -102,23 +98,23 @@ body {
 }
 
 .mockup-desktop {
-  width: 1000px;
+  width: 800px;
   border-radius: 1rem;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .mockup-mobile {
-  width: 300px;
+  width: 230px;
   border-radius: 1rem;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-
   position: absolute;
-  right: 480px;
-  top: 60px;
+  right: 320px;
+  top: 140px;
+  left: 1140px;
 }
 
 .brand-section {
-  margin-top: 60px;
+  margin-top: 120px;
 }
 .brand-wrapper {
   display: flex;
@@ -225,4 +221,172 @@ body {
   font-size: 0.95rem;
   color: #64748b;
   line-height: 1.5;
+}
+.achievement-section {
+  padding: 4rem 1.5rem;
+  text-align: center;
+  background: #f9fbff;
+  color: #1f2937;
+}
+
+.achievement-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #7b61ff, #5d3eff);
+  border-radius: 50%;
+  padding: 1rem;
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 1.5rem;
+  color: white;
+}
+
+.achievement-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.achievement-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.achievement-subtext {
+  font-size: 1rem;
+  max-width: 700px;
+  margin: 0 auto 2.5rem;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.achievement-stats {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+}
+
+.stat-item {
+  text-align: center;
+  min-width: 120px;
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #5d3eff;
+}
+
+.stat-label {
+  font-size: 0.95rem;
+  color: #6b7280;
+  margin-top: 0.25rem;
+}
+
+.stat-divider {
+  width: 1px;
+  height: 50px;
+  background-color: #cbd5e1;
+  transition: background-color 0.3s ease;
+}
+
+.stat-divider:hover {
+  background-color: #7b61ff;
+}
+
+.whois-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding: 4rem 1.5rem;
+  align-items: flex-start; /* top alignment */
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.whois-left {
+  flex: 1 1 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* text aligned left */
+}
+
+.tag-small {
+  font-size: 0.75rem;
+  color: #5d3eff;
+  font-weight: 600;
+  background: #f0f0ff;
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  margin-bottom: 0.8rem;
+}
+
+.whois-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+.whois-subtitle {
+  font-size: 1rem;
+  color: #4b5563;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.whois-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.whois-item {
+  border-left: 4px solid transparent;
+  padding-left: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.whois-item:hover {
+  border-color: #5d3eff;
+}
+
+.whois-item h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  color: #1f2937;
+  text-align: left;
+}
+
+.whois-item p {
+  font-size: 0.95rem;
+  color: #6b7280;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.whois-item.active {
+  border-left: 4px solid #5d3eff;
+}
+
+.whois-right {
+  flex: 1 1 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.whois-right img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
 }
