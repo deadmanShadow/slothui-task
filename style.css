@@ -540,6 +540,7 @@ body {
 .faq-section {
   min-height: 100vh;
   display: flex;
+  background: #f9fbff;
   justify-content: center;
   align-items: center;
   padding: 40px 0;
@@ -624,4 +625,99 @@ body {
 .faq-item.active .faq-answer {
   max-height: 200px;
   padding: 16px;
+}
+.download-app-section {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 80px 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: stretch;
+}
+
+.download-app-section .content {
+  max-width: 500px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  height: 100%;
+}
+
+.download-app-section h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #1e1e1e;
+}
+
+.download-app-section p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.download-app-section .buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.btn-outline,
+.btn-solid {
+  padding: 12px 24px;
+  border-radius: 9999px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-outline {
+  border: 2px solid #5d5fef;
+  color: #5d5fef;
+}
+
+.btn-outline:hover {
+  background: #5d5fef;
+  color: white;
+}
+
+.btn-solid {
+  background: #5d5fef;
+  color: white;
+}
+
+.btn-solid:hover {
+  background: #4749d8;
+}
+
+.image-wrapper {
+  display: flex;
+  width: 560px;
+  gap: 20px;
+  flex: 1;
+  justify-content: center;
+}
+
+.download-app-section .image img {
+  height: auto;
+  display: block;
+}
+.img1 {
+  position: relative;
+  z-index: 2;
+  top: 20px;
+  gap: 2px;
+}
+.img2 {
+  position: relative;
+  z-index: 2;
+  bottom: 80px;
+  gap: 2px;
+  width: 300px;
+  shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
