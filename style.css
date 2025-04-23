@@ -8,7 +8,9 @@ body {
   background: linear-gradient(to bottom, #ffffff, #e9f0fd);
   color: #111;
   padding: 1rem;
+  scroll-behavior: smooth;
 }
+
 #topBtn {
   position: fixed;
   bottom: 40px;
@@ -35,6 +37,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 2rem;
   padding: 10px 20px;
   position: relative;
   background-color: white;
@@ -60,7 +63,7 @@ body {
 .auth-buttons .btn-dark {
   padding: 0.5rem 1.2rem;
   border-radius: 999px;
-  border: none;
+  border: 1px solid transparent;
   font-weight: 600;
   cursor: pointer;
   margin-left: 0.5rem;
@@ -229,7 +232,7 @@ body {
 
 .features-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 2.5rem;
   max-width: 1100px;
   margin: 0 auto;
@@ -796,12 +799,14 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 40px;
+  top: 60px;
   border-bottom: 1px solid #e0e0e0;
   padding-bottom: 40px;
 }
 
 .footer-column {
   min-width: 160px;
+  top: 60px;
 }
 
 .footer-column h4 {
@@ -924,18 +929,23 @@ body {
   }
 
   .mockups {
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
   }
 
   .mockup-desktop {
-    width: 90%;
+    width: 450px;
+    display: block;
   }
 
   .mockup-mobile {
-    position: static;
-    width: 60%;
+    position: absolute;
+    width: 130px;
+    top: 80px;
+    left: 80%;
+    transform: translateX(-50%);
+    z-index: 2;
   }
   .store-buttons {
     flex-direction: column;
@@ -979,7 +989,23 @@ body {
     color: #6b7280;
   }
 
+  .features-section {
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .section-subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+    color: #6b7280;
+  }
+
   .features-grid {
+    grid-template-columns: 1fr;
     gap: 1.5rem;
   }
 
@@ -998,7 +1024,6 @@ body {
   .feature-item img {
     height: 36px;
   }
-
   .achievement-section {
     padding: 2rem 1rem;
   }
@@ -1025,7 +1050,7 @@ body {
   }
 
   .stat-value {
-    font-size: 1.8rem;
+    font-size: 60px;
   }
 
   .stat-label {
@@ -1085,6 +1110,104 @@ body {
 
   .office-card p {
     font-size: 0.85rem;
+  }
+  .faq-section {
+    padding: 20px 0;
+    min-height: auto;
+  }
+
+  .faq-wrapper {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    box-shadow: none;
+  }
+
+  .tag {
+    font-size: 11px;
+    padding: 3px 10px;
+  }
+
+  .faq-wrapper h2 {
+    font-size: 22px;
+  }
+
+  .subtext {
+    font-size: 14px;
+    margin: 12px 0 24px;
+  }
+
+  .faq-question {
+    font-size: 15px;
+    padding: 12px;
+  }
+
+  .faq-answer {
+    font-size: 14px;
+    padding: 0 12px;
+  }
+
+  .faq-item.active .faq-answer {
+    padding: 12px;
+  }
+  .download-app-section {
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .content {
+    text-align: center;
+    align-items: center;
+  }
+
+  .image-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .img1 {
+    width: 200px;
+    height: auto;
+    top: 100px;
+  }
+  .img2 {
+    width: 200px;
+    height: auto;
+    top: 20px;
+  }
+  .footer {
+    padding: 40px 20px 20px;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .footer-column {
+    width: 100%;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+  }
+
+  .footer-logo {
+    justify-content: center;
+  }
+
+  .footer-up {
+    order: -1;
   }
 }
 

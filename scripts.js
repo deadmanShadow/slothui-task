@@ -8,19 +8,16 @@ document.querySelectorAll(".faq-question").forEach((btn) => {
     item.classList.toggle("active");
   });
 });
-
 window.addEventListener("DOMContentLoaded", () => {
   const third = document.querySelectorAll(".faq-item")[2];
   third.classList.add("active");
 });
-
 document.querySelector(".scroll-top").addEventListener("click", () => {
   window.scrollTo({
     top: 0,
     behavior: "smooth",
   });
 });
-
 const topButton = document.getElementById("topBtn");
 
 window.onscroll = function () {
@@ -42,7 +39,6 @@ const navLinks = document.querySelector(".nav-links");
 menuToggle.addEventListener("click", () => {
   navLinks.classList.toggle("open");
 });
-
 document.querySelector(".load-more-btn").addEventListener("click", function () {
   const hiddenCards = document.querySelectorAll(
     ".testimonial-grid .testimonial-card:nth-child(n+5)"
@@ -51,6 +47,5 @@ document.querySelector(".load-more-btn").addEventListener("click", function () {
   hiddenCards.forEach((card) => {
     card.style.display = "block";
   });
-
   this.style.display = "none";
 });
