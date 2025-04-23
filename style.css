@@ -456,3 +456,83 @@ body {
   max-width: 680px;
   margin: 0 auto 2.5rem;
 }
+.office-section {
+  padding: 4rem 2rem;
+  background: #f9fbff;
+  color: #1e293b;
+}
+
+.office-header {
+  text-align: left;
+  max-width: 1200px;
+  margin: 0 auto 2.5rem;
+}
+
+.office-tag {
+  display: inline-block;
+  background: #f0f0ff;
+  color: #7b61ff;
+  font-weight: 600;
+  font-size: 0.875rem;
+  padding: 0.3rem 0.9rem;
+  border-radius: 9999px;
+  margin-bottom: 0.8rem;
+}
+
+.office-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #0f172a;
+}
+
+.office-subtitle {
+  font-size: 1rem;
+  color: #475569;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.office-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.office-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+  transition: 0.3s ease all;
+  border: 1px solid #e2e8f0;
+  text-align: left;
+}
+
+.office-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+}
+
+.office-icon {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 1rem;
+  filter: invert(30%) sepia(75%) saturate(3000%) hue-rotate(230deg)
+    brightness(90%) contrast(100%);
+}
+
+.office-card h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+  color: #0f172a;
+}
+
+.office-card p {
+  font-size: 0.95rem;
+  color: #334155;
+  line-height: 1.5;
+}
