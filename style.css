@@ -732,7 +732,9 @@ body {
 
 .download-app-section .buttons {
   display: flex;
-  gap: 16px;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
 .btn-outline,
@@ -940,7 +942,7 @@ body {
   }
 
   .mockup-desktop {
-    width: 343px;
+    width: 300px;
     margin-top: 90px;
     background: linear-gradient(to bottom, #ffffff, #e9f0fd);
   }
@@ -954,6 +956,7 @@ body {
     background: linear-gradient(to bottom, #ffffff, #e9f0fd);
   }
   .store-buttons {
+    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
@@ -1178,24 +1181,28 @@ body {
   .img1 {
     width: 162px;
     height: auto;
-    top: 100px;
+    top: 170px;
     right: 12px;
+    left: 8px;
     border-radius: 8px;
     margin-bottom: 100px;
   }
   .img2 {
     width: 162px;
     height: auto;
+    left: 10px;
     border-radius: 8px;
     margin-bottom: 100px;
     top: 20px;
   }
   .footer {
     padding: 40px 20px 20px;
+    justify-content: flex-end;
   }
 
   .footer-top {
     flex-direction: column;
+    text-align: left;
     align-items: flex-start;
     gap: 24px;
   }
