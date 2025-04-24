@@ -97,6 +97,7 @@ body {
 .hero-section {
   text-align: center;
   padding: 3rem 2rem;
+  margin-bottom: 60px;
 }
 
 .tag {
@@ -143,16 +144,18 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 3rem;
+  background: linear-gradient(to bottom, #ffffff, #7879ff);
 }
 
 .mockup-desktop {
   width: 800px;
   border-radius: 1rem;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin-bottom: 150px;
 }
 
 .mockup-mobile {
-  width: 230px;
+  width: 206px;
   border-radius: 1rem;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   position: absolute;
@@ -199,7 +202,7 @@ body {
 }
 .features-section {
   padding: 4rem 1rem;
-  background: linear-gradient(to bottom, #f3f6fd, #e9f0fd);
+  background: white;
   text-align: center;
   color: #1e3a8a;
 }
@@ -241,7 +244,7 @@ body {
 .feature-item {
   padding: 1.5rem;
   border-radius: 1rem;
-  background: #ffffff;
+  background: white;
   box-shadow: 0 8px 24px rgba(59, 130, 246, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -262,12 +265,11 @@ body {
   font-size: 1.1rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
-  color: #1e3a8a;
 }
 
 .feature-item p {
   font-size: 0.95rem;
-  color: #64748b;
+
   line-height: 1.5;
 }
 .achievement-section {
@@ -383,7 +385,6 @@ body {
 
 .whois-subtitle {
   font-size: 1rem;
-  color: #4b5563;
   margin-bottom: 2rem;
   line-height: 1.6;
   text-align: left;
@@ -410,13 +411,11 @@ body {
   font-size: 1rem;
   font-weight: 600;
   margin-bottom: 0.3rem;
-  color: #1f2937;
   text-align: left;
 }
 
 .whois-item p {
   font-size: 0.95rem;
-  color: #6b7280;
   line-height: 1.5;
   text-align: left;
 }
@@ -514,7 +513,9 @@ body {
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  width: 343px;
+  width: 230px;
+  text-align: center;
+  transition: background-color 0.3s ease;
   height: 40px;
   margin-top: 2rem;
 }
@@ -777,7 +778,8 @@ body {
 .img1 {
   position: relative;
   z-index: 2;
-  top: 160px;
+  width: 100%;
+  top: 80px;
   gap: 2px;
 }
 .img2 {
@@ -785,7 +787,7 @@ body {
   z-index: 2;
   bottom: 80px;
   gap: 2px;
-  width: 300px;
+  width: 100%;
   shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 .footer {
@@ -843,8 +845,8 @@ body {
 }
 
 .logo-img {
-  width: 32px;
-  height: 32px;
+  width: 50px;
+  height: 50px;
   object-fit: contain;
 }
 
@@ -852,6 +854,8 @@ body {
   border: 1px solid #ccc;
   border-radius: 9999px;
   width: 36px;
+  margin-top: 30px;
+
   height: 36px;
   background: transparent;
   font-size: 18px;
@@ -932,20 +936,22 @@ body {
     position: relative;
     width: fit-content;
     margin: 0 auto;
+    padding: 3rem 2rem;
   }
 
   .mockup-desktop {
-    width: 450px;
-    display: block;
+    width: 343px;
+    margin-top: 90px;
+    background: linear-gradient(to bottom, #ffffff, #e9f0fd);
   }
 
   .mockup-mobile {
     position: absolute;
-    width: 130px;
-    top: 80px;
-    left: 80%;
+    width: 100px;
+    top: 230px;
+    left: 75%;
     transform: translateX(-50%);
-    z-index: 2;
+    background: linear-gradient(to bottom, #ffffff, #e9f0fd);
   }
   .store-buttons {
     flex-direction: column;
@@ -986,7 +992,6 @@ body {
   .section-subtitle {
     font-size: 0.95rem;
     margin-bottom: 2rem;
-    color: #6b7280;
   }
 
   .features-section {
@@ -1037,7 +1042,6 @@ body {
     font-size: 0.95rem;
     max-width: 90%;
     margin: 0 auto 2rem;
-    color: #6b7280;
   }
 
   .achievement-stats {
@@ -1129,7 +1133,7 @@ body {
   }
 
   .faq-wrapper h2 {
-    font-size: 22px;
+    font-size: 36px;
   }
 
   .subtext {
@@ -1172,13 +1176,18 @@ body {
   }
 
   .img1 {
-    width: 200px;
+    width: 162px;
     height: auto;
     top: 100px;
+    right: 12px;
+    border-radius: 8px;
+    margin-bottom: 100px;
   }
   .img2 {
-    width: 200px;
+    width: 162px;
     height: auto;
+    border-radius: 8px;
+    margin-bottom: 100px;
     top: 20px;
   }
   .footer {
